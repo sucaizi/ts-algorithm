@@ -31,7 +31,7 @@ export function reverseList(head: any) {
  */
 export function reverseList2(head: any) {
   var cur: any = head;
-  show(head, false);
+//   show(head, false);
   while (head.next !== null) {
     var t = head.next.next;
     head.next.next = cur;
@@ -99,12 +99,12 @@ export function reverseList5(head: any) {
   return cur;
 }
 
-function show(p: any, revsrse: boolean) {
-  var q = p;
-  var r = [];
-  while (q) {
-    r.push(q.val);
-    q = q.next;
-  }
-  console.log(r.join(revsrse ? '<-' : '->'));
-}
+// function show(p: any, revsrse: boolean) {
+//   var q = p;
+//   var r = [];
+//   while (q) {
+//     r.push(q.val);
+//     q = q.next;
+//   }
+//   console.log(r.join(revsrse ? '<-' : '->'));
+// }
